@@ -1,17 +1,17 @@
-let inputForm = document.querySelector("#tableform");
-let inputform = document.querySelector("#inputID");
-let table = document.querySelector("#time-table");
+let inputForm = document.querySelector("#tableForm");
+let input = document.querySelector("#inputID");
+let table = document.querySelector(".time-table");
 
-inputform.addEventListener("submit", (event) => {
+inputForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  let tableoF = input.value;
+  let tableOf = input.value;
 
   table.innerHTML = "";
 
   for (let i = 1; i <= 12; i++) {
-    console.log(tableoF + "x" + i + " =", tableoF * i);
-    const meassage = `${tableoF} X ${i} = ${tableoF * i}`;
+    // console.log(tableOf + " x " + i + " =", tableOf * i);
+    const message = `${tableOf} X ${i} = ${tableOf * i}`;
 
     table.innerHTML += `${message} <br>`;
   }
